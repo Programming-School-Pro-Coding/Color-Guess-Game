@@ -1,5 +1,4 @@
 const color = document.getElementById("colorDisplay");
-const squares = document.querySelectorAll(".square");
 const btns = document.getElementById("reset");
 const correct_message = document.getElementById("message");
 const colorDisplay = document.getElementById("colorDisplay");
@@ -32,6 +31,7 @@ color_generator();
 generateRandomColors(num_of_squares);
 
 function new_colors() {
+  const squares = document.querySelectorAll(".square");
   color_generator();
   rgb_color = generateRandomColors(num_of_squares);
   for (let g = 0; g < num_of_squares; g++) {
