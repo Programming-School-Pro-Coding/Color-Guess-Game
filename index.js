@@ -6,6 +6,7 @@ const h1 = document.getElementById("h1");
 const hardBtn = document.getElementById("hardBtn");
 const easyBtn = document.getElementById("easyBtn");
 const container = document.getElementById("container");
+const startBtn = document.getElementById('start-btn');
 let num_of_squares = 6;
 let rgb_color = generateRandomColors(num_of_squares);;
 let random_index;
@@ -98,3 +99,8 @@ hardBtn.addEventListener("click", () => {
     "<div class='square'></div><div class='square'></div><div class='square'></div><div class='square'></div><div class='square'></div><div class='square'></div>";
   new_colors();
 });
+
+startBtn.addEventListener("click", () => {  //hide popup banner when start button is clicked
+  const element = document.querySelector('#popup-div');
+  element.style.display = 'none';
+})
