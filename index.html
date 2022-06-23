@@ -1,38 +1,32 @@
 <html>
   <head>
     <title>Color Game</title>
-    <script
-      src="https://kit.fontawesome.com/e9cb051e82.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" type="text/css" href="index.css" />
-    <link rel="shortcut icon" href="./images/Logo.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/Logo.jpeg" type="image/x-icon" />
   </head>
   <body>
-    <div class="Game-container">
-      <h1 class="header-game" id="h1">
-        The
-        <br />
-        <span id="colorDisplay">RGB</span>
-        <br />
-        Color Guessing Game
-      </h1>
-      <div id="stripe">
-        <button class="btn" id="reset">New Colors!</button>
-        <span id="message"></span>
-        <button class="btn" id="easyBtn">Easy</button>
-        <button class="btn" id="hardBtn" class="selected">Hard</button>
-      </div>
-      <div id="container">
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-      </div>
+    <h1 id="h1">
+      The
+      <br />
+      <span id="colorDisplay">RGB</span>
+      <br />
+      Color Guessing Game
+    </h1>
+    <div id="stripe">
+      <button class="btn" id="reset">New Colors!</button>
+      <span id="message"></span>
+      <button class="btn" id="easyBtn">Easy</button>
+      <button class="btn selected" id="hardBtn">Hard</button>
     </div>
-    
+    <div id="container">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
+
     <script src="index.js"></script>
   </body>
 </html>

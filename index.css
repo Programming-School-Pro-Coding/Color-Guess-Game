@@ -38,7 +38,7 @@ body {
   margin: 20px auto;
 }
 
-.header-game {
+h1 {
   color: white;
   text-align: center;
   background: steelblue;
@@ -55,10 +55,7 @@ body {
   text-align: center;
 }
 
-.selected {
-  color: white;
-  background: steelblue;
-}
+
 #colorDisplay {
   font-size: 200%;
 }
@@ -77,6 +74,11 @@ body {
   -moz-transition: all 0.3s;
   outline: none;
   cursor: pointer;
+}
+
+.selected {
+  color: white;
+  background: steelblue;
 }
 
 #message {
