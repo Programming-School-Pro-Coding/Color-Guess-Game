@@ -58,7 +58,7 @@ function new_colors() {
         btns.innerText = "Play Again?";
         h1.style.backgroundColor = rgb_color[random_index];
       } else {
-        this.style.backgroundColor = "#232323";
+        this.style.backgroundColor = "transparent";
         correct_message.innerText = "Try Again";
       }
     });
