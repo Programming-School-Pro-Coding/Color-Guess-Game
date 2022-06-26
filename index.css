@@ -81,9 +81,21 @@ h1 {
   background: steelblue;
 }
 
-#message {
+#messages {
   display: inline-block;
   width: 20%;
+}
+
+#message {
+  position: absolute;
+  left: 700px;
+  top: 187px;
+}
+
+.score__paragraph {
+  position: absolute;
+  left: 600px;
+  top: 170px;
 }
 
 .btn:hover {

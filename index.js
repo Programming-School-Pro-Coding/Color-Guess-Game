@@ -6,6 +6,8 @@ const h1 = document.getElementById("h1");
 const hardBtn = document.getElementById("hardBtn");
 const easyBtn = document.getElementById("easyBtn");
 const container = document.getElementById("container");
+const Score = document.querySelector('.score__paragraph');
+const score_count = document.querySelector('.score');
 let num_of_squares = 6;
 let rgb_color = generateRandomColors(num_of_squares);;
 let random_index;
@@ -32,6 +34,7 @@ generateRandomColors(num_of_squares);
 
 function new_colors() {
   const squares = document.querySelectorAll(".square");
+  let score = parseInt(score_count.textContent);
   color_generator();
   rgb_color = generateRandomColors(num_of_squares);
   for (let g = 0; g < num_of_squares; g++) {
@@ -57,6 +60,8 @@ function new_colors() {
         correct_message.innerText = "Correct!";
         btns.innerText = "Play Again?";
         h1.style.backgroundColor = rgb_color[random_index];
+        score_count.textContent = score + 1;
+        console.log(score);
       } else {
         this.style.backgroundColor = "transparent";
         correct_message.innerText = "Try Again";
