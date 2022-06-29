@@ -1,0 +1,112 @@
+/* Start Global Styles */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+$defaultFont: "Public Sans", sans-serif;
+// $defaultFont: "Red Hat Display", sans-serif;
+// $defaultFont: "Outfit", sans-serif;
+// $defaultFont: "Inter", sans-serif;
+
+* {
+  transition: all 0.5s;
+}
+
+body {
+  margin: 0;
+  font-family: $defaultFont;
+  background: #232323;
+}
+
+/* End Global Styles */
+
+/* Start Game-Container */
+
+#true {
+  width: calc(100% + 500px);
+  color: white;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  background: steelblue;
+  margin: 0;
+  font-weight: normal;
+  line-height: 1.1;
+  padding: 20px 0;
+
+  #colorDisplay {
+    font-size: 200%;
+  }
+}
+
+#stripe {
+  background: white;
+  height: 30px;
+  text-align: center;
+
+  .btn {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1px;
+    font-size: inherit;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+      color: white;
+      background: steelblue;
+    }
+  }
+
+  .selected {
+    color: white;
+    background: steelblue;
+  }
+
+  #messages {
+    display: inline-block;
+    width: 20%;
+
+    #message {
+      position: absolute;
+      left: 700px;
+      top: 187px;
+    }
+  }
+
+  .score__paragraph {
+    position: absolute;
+    left: 600px;
+    top: 170px;
+  }
+}
+
+#wrapper {
+  width: 100%;
+  background: #232323;
+  #container {
+    max-width: 600px;
+    margin: 20px auto;
+
+    .square {
+      width: 30%;
+      margin: 1.66667%;
+      /*need to understand as it's the reason of the visibility of empty divs*/
+      padding-bottom: 30%;
+      float: left;
+      border-radius: 15%;
+      transition: all 0.6s;
+      -webkit-transition: all 0.6s;
+      -moz-transition: all 0.6s;
+      cursor: pointer;
+    }
+  }
+}
+/* End Game-Container */
