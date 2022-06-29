@@ -1,5 +1,8 @@
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Game</title>
     <script
       src="https://kit.fontawesome.com/e9cb051e82.js"
@@ -10,20 +13,27 @@
   </head>
   <body>
     <div class="Game-container">
-      <h1 class="header-game" id="h1">
-        The
-        <br />
-        <span id="colorDisplay">RGB</span>
-        <br />
-        Color Guessing Game
-      </h1>
+      <div class="header-game" id="h1">
+        <h1>The color Guessing Game</h1>
+      </div>
       <div id="stripe">
         <button class="btn" id="reset">New Colors!</button>
-        <span id="message"></span>
-        <button class="btn" id="easyBtn">Easy</button>
-        <button class="btn" id="hardBtn" class="selected">Hard</button>
+        <div id="message" class="hidden">
+          <span class="message"></span>
+          <button class="play-again hidden btn">Restart</button>
+        </div>
+        <div class="mobile-menu">
+          <div class="flex-div">
+            <button class="btn" id="easyBtn">Easy</button>
+            <button class="btn" id="hardBtn" class="selected">Hard</button>
+          </div>
+        </div>
+        <button class="burger btn">Show Menu</button>
       </div>
-      <div id="container">
+      <div class="color-to-guess">
+        <span id="colorDisplay">RGB</span>
+      </div>
+      <div class="colors-container">
         <div class="square"></div>
         <div class="square"></div>
         <div class="square"></div>
