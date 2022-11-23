@@ -6,6 +6,8 @@ const h1 = document.getElementById("h1");
 const hardBtn = document.getElementById("hardBtn");
 const easyBtn = document.getElementById("easyBtn");
 const container = document.getElementById("container");
+
+
 let num_of_squares = 6;
 let rgb_color = generateRandomColors(num_of_squares);;
 let random_index;
