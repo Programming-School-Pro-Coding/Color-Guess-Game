@@ -6,13 +6,11 @@ const h1 = document.getElementById("h1");
 const hardBtn = document.getElementById("hardBtn");
 const easyBtn = document.getElementById("easyBtn");
 const container = document.getElementById("container");
-const Score = document.querySelector('.score__paragraph');
-const score_count = document.querySelector('.score');
 let num_of_squares = 6;
 let rgb_color = generateRandomColors(num_of_squares);;
 let random_index;
 let selected;
-
+const startBtn = document.getElementById('start-btn');
 // Guess The Color
 function color_generator() {
   let red = Math.floor(Math.random() * 256);
@@ -103,3 +101,8 @@ hardBtn.addEventListener("click", () => {
     "<div class='square'></div><div class='square'></div><div class='square'></div><div class='square'></div><div class='square'></div><div class='square'></div>";
   new_colors();
 });
+
+startBtn.addEventListener("click", () => {  //hide popup banner when start button is clicked
+  const element = document.querySelector('#popup-div');
+  element.style.display = 'none';
+})

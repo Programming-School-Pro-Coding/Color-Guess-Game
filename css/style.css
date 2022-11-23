@@ -64,40 +64,5 @@ h1 #colorDisplay {
   background: steelblue;
 }
 
-#stripe #messages {
-  display: inline-block;
-  width: 20%;
-}
-
-#stripe #messages #message {
-  position: absolute;
-  left: 700px;
-  top: 187px;
-}
-
-#stripe .score__paragraph {
-  position: absolute;
-  left: 600px;
-  top: 170px;
-}
-
-#container {
-  max-width: 600px;
-  margin: 20px auto;
-}
-
-#container .square {
-  width: 30%;
-  margin: 1.66667%;
-  /*need to understand as it's the reason of the visibility of empty divs*/
-  padding-bottom: 30%;
-  float: left;
-  border-radius: 15%;
-  transition: all 0.6s;
-  -webkit-transition: all 0.6s;
-  -moz-transition: all 0.6s;
-  cursor: pointer;
-}
-
 /* End Game-Container */
 /*# sourceMappingURL=style.css.map */
