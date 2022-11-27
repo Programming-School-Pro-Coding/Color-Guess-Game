@@ -34,7 +34,6 @@ generateRandomColors(num_of_squares);
 
 function new_colors() {
   const squares = document.querySelectorAll(".square");
-  let score = parseInt(score_count.textContent);
   color_generator();
   rgb_color = generateRandomColors(num_of_squares);
   for (let g = 0; g < num_of_squares; g++) {
@@ -106,5 +105,6 @@ hardBtn.addEventListener("click", () => {
 
 startBtn.addEventListener("click", () => {  //hide popup banner when start button is clicked
   const element = document.querySelector('#popup-div');
-  element.style.display = 'none';
+  element.style.opacity = '0';
+  element.style.display = "none";
 })
