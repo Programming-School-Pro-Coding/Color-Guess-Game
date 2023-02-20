@@ -19,5 +19,5 @@ git clone git@github.com:Programming-School-Pro-Coding/Color-Guess-Game.git
 ```
 
 **Run the Server**
-Run server using live Server
+Run server using live Server or open the *index.html* in the browser
 
